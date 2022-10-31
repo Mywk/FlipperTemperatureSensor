@@ -10,28 +10,44 @@ I'm using a [Sparkfun HTU21D sensor](https://learn.sparkfun.com/tutorials/htu21d
 
 ![App](images/App.png)
 
-## How to Connect the sensor
+<br/>
+
+# How to Connect the sensor
 ![Connection](images/Connection.png)
 
 
-## How to install
+# How to install
 
 If you have the FAP loader, just copy the fap file from the Releases into your Flipper apps folder and you should be able to launch it from the menu.
 
 If you don't have the FAP loader you will have to bake this application together with your firmware (aka compile it all together).
 
-## How to compile
+# FAQ
+
+## The app says the sensor is not found!
+
+1- Are the four connectors correctly soldered?
+
+2- Are the SCL and SDA connections correct? Re-check the "How to Connect the sensor" above.
+
+3- On the sensor board, there should be three contacts in the center, for it to work correctly they must be soldered together (basically drop a blob of solder to connect the three of them). Without the solder it looks like this:
+
+![Sensor](images/Sensor.png)
+
+## Which Flipper versions was this app tested on?
+
+- RM10302252-0.70.1
+- unlshd-012
+- 0.68.2-1007-RM
+- 0.68.1
+- 0.67.2
+
+## I can't build the app together with the firmware?
+
+In the *application.fam*, don't forget to change the apptype, it should not be EXTERNAL but APP.
+
+# How to compile
 
 Place the temperature_sensor folder in the applications_user folder and compile using FBT.
 
 Please refer to the [Flipper Build Tool documentation](https://github.com/flipperdevices/flipperzero-firmware/blob/dev/documentation/fbt.md).
-
-## Which Flipper versions was this app tested on?
-
-- 0.67.2
-- 0.68.1
-- 0.68.2-1007-RM
-
-## I can't build the app together with the firmware?
-
-In the application.fam, don't forget to change the apptype, it should not be EXTERNAL but APP.
