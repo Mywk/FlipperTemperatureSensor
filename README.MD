@@ -40,12 +40,12 @@ If you don't have the FAP loader you will have to bake this application together
 
 ## Which Flipper versions was this app tested on?
 
-Version 1.1
+Version 1.2
 - RM11221439-0.71.2
 - unlshd-015
 - 0.71.1 
 
-Version 1.0
+Version 1.1
 - RM10302252-0.70.1
 - unlshd-012
 - 0.68.2-1007-RM
