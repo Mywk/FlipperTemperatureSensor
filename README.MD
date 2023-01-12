@@ -1,5 +1,13 @@
 # Flipper Temperature Sensor
 
+## Note
+
+This app is no longer actively developed, please check [unitemp-flipperzero](https://github.com/quen0n/unitemp-flipperzero).
+
+You can still use this project for a super simple and easy to understand first-app template, especially [v1.0](https://github.com/Mywk/FlipperTemperatureSensor/releases/tag/v1.0).
+
+<br/>
+
 ## Supported sensors
 
 > HTU2xD, SHT2x, SI702x, SI700x, SI701x, AM2320
